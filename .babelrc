@@ -1,0 +1,26 @@
+{
+  "presets": ["react-native"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"]
+      }
+    ]
+  ],
+  "env": {
+    "web": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "react-native": "react-native-web"
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "TrelloClone",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "start:web": "cross-env BABEL_ENV=web webpack-dev-server --config ./web/webpack/webpack.dev.js",
+    "remotedev": "remotedev --hostname=localhost --port=9500"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.6",
+    "dotenv": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-template": "^6.2.0",
+    "immutable": "^3.8.2",
+    "prettier": "^1.13.4",
+    "babel-core": "^6.26.0",
+    "babel-plugin-react-native-web": "^0.4.0",
+    "file-loader": "^1.1.6",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-art": "16.3.1",
+    "react-native": "^0.53.0",
+    "react-native-modal-selector": "^0.0.24",
+    "react-native-web": "^0.8.9",
+    "react-navigation": "^1.0.3",
+    "react-hot-loader": "^4.3.0",
+    "react-immutable-proptypes": "^2.1.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.12",
+    "uws": "^10.148.0",
+    "webpack-dev-server": "^3.1.4",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-helpers": "^6.24.1",
+    "babel-jest": "23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "23.1.0",
+    "react-test-renderer": "16.3.1",
+    "remotedev-server": "^0.3.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
